@@ -1,0 +1,146 @@
+@import url(/public/css/styles.css);
+
+/* Mobile */
+
+header{
+    background-color: var(--amarillo);
+}
+
+.logo-barra{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    padding: 32px 0;
+    align-items: center;
+    vertical-align: middle;
+}
+
+header img{
+    width: 44vw;
+}
+
+.informacion-cuotas{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.barra-busqueda{
+    width: 45%;
+    display: flex;
+    align-self: center;
+    background-color: #FFF;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.barra-busqueda form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+input, button{
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    padding: 0;
+}
+
+input[type=search]{
+    width: 100%;
+    display: inline;
+}
+
+input:focus{
+    outline: none;
+}
+
+.burger-menu{
+    font-size: 20px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: 10px 10px;
+    width: max-content;
+    height: max-content;
+    justify-content: center;
+    background-color: var(--azul);
+    color: var(--grisClaro);
+    border-radius: 5px;
+}
+
+nav{
+    display: none;
+}
+
+.burger-menu:hover nav{
+    display: contents;
+}
+
+#banner{
+    width: 100%;
+    display: block;
+    padding-top: 10px;
+}
+
+/* Tablet */
+
+@media(min-width: 361px){
+    nav{
+        width: 98%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+
+    nav ul li{
+        padding: 0 2px;
+    }
+
+    header img{
+        width: 40vw;
+    }
+
+    .enlaces-compra{
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        width: 40%;
+    }
+
+    .enlaces-usuario{
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 40%;
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+}
+
+/* Desktop */
+
+@media(min-width: 769px){
+    header img{
+        width: 35vw;
+    }
+
+    nav ul, nav a{
+        font-size: larger;
+    }
+
+    .informacion-cuotas i, .informacion-cuotas p{
+        font-size: larger;
+    }
+}
